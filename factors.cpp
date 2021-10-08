@@ -10,10 +10,16 @@ int i;
 int c=0;
 cout<<"All factors are"<<endl;
 
-for(i=1;i<n;i++)
+for(i=1;i*i<n;i++)
 {
 if(n%i==0)
-cout<<i<<endl;
+{
+ if(n/i==i)
+    cout<<i<<endl<<n/i;
+   else
+      cout<<n/i<<endl;
+   
+}
 }
 
 
